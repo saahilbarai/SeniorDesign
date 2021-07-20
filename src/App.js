@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import react from 'react'
+import Navbar from './components/Navbar/Navbar'
+import {
+  HashRouter as Router,
+  Link,
+  Route,
+  Switch,
+} from 'react-router-dom';
+import Home from './components/Pages/Home';
+import Map from './components/Pages/Map';
+import AboutMe from './components/Pages/AboutMe';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends react.Component {
+  constructor () {
+    super()
+    this.state = {
+      
+    }
+  }
+  render (){
+  return <>
+          <Router hashType = 'slash'>
+            <Navbar />
+            <Switch>
+              <Route path='/' exact component =
+              {Home} />
+              <Route path='/Map' exact component = 
+              {Map} />
+              <Route path='/About' exact component = 
+              {AboutMe} />
+            </Switch>
+          </Router>
+        </>
+  }
 }
 
-export default App;
+export default App

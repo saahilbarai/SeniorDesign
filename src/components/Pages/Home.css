@@ -1,0 +1,75 @@
+.darkBg {
+    width: auto;
+    padding: 100px 0;
+    height: 225px;
+    overflow: hidden;
+    flex: 1;
+}
+
+.row {
+    margin-top: 100px;
+    margin-right: -15px;
+    margin-bottom: -15px;
+    margin-left: -15px;
+}
+
+.col {
+    margin-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    flex: 1;
+}
+
+.textWrapper {
+    max-width: 740px;
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+.mainTextHome {
+    color: black;
+    padding-left: 40px;
+    display: flex;
+    font-size: 4em; 
+    transition: all 1s ease;
+}
+
+.mainTextHome:hover {
+    color: #fce100;
+    padding-left: 40px;
+    display: flex;
+    font-size: 4em; 
+}
+
+.fireText {
+    color: black;
+    padding-left: 40px;
+    display: flex;
+    font-size: 4em; 
+}
+
+.homePara {
+    /* max-width: 450px; */
+    color: white;
+    padding-left: 40px;
+    display: flex;
+    font-size: 2em;
+}
+
+
+@media screen and (max-width: 960px){
+    .mainTextHome {
+        color: black;
+        padding-left: 25px;
+        padding-right: 25px;
+        display: flexbox;
+        font-size: 3em;
+    }
+    .homePara {
+        /* max-width: 450px; */
+        color: black;
+        padding-left: 25px;
+        display: flexbox;
+        font-size: 2em;
+    }
+}

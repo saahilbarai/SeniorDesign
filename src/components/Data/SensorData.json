@@ -1,0 +1,32 @@
+{
+    "type": "SensorCollection",
+    "sensors": [
+        {
+            "type": "Sensor",
+            "properties": 
+                {
+                    "timeStamp" : " ",
+                    "deviceId": 1,
+                    "deviceName": " ",
+                    "latitude": " ",
+                    "longitude": " ", 
+                    "temperature": " ",
+                    "riskScore": " "
+                }
+        },
+        {
+            "type": "Sensor",
+            "properties": 
+                {
+                    "timeStamp" : " ",
+                    "deviceId": 2,
+                    "deviceName": " ",
+                    "latitude": " ",
+                    "longitude": " ", 
+                    "temperature": " ",
+                    "riskScore": " "
+                }
+        }
+    ]
+    
+}
